@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@source "../views";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --default-font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+.bg-dot {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34' width='36' height='38' fill='none'%3e%3ccircle fill='rgb(161 161 170 / 0.2)' id='pattern-circle' cx='10' cy='10' r='1.6257413380501518'%3e%3c/circle%3e%3c/svg%3e")
+}
