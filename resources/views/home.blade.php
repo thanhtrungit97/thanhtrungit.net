@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('content')
-<div class="container mx-auto flex flex-col justify-center py-16 px-6">
+<div class="container mx-auto flex flex-col justify-center px-6">
     <div class="mb-14 flex flex-wrap items-center justify-center gap-10 sm:mb-20 sm:gap-20">
         <img src="{{ asset('assets/image/thanhtrung.jpeg') }}" alt="Le Thanh Trung" class="size-32 rounded-full sm:size-40">
         <div class="group">

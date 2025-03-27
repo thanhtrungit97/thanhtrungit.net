@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <div class="min-h-screen w-full bg-zinc-50 bg-dot antialiased">
+    <div class="min-h-screen w-full bg-zinc-50 bg-dot antialiased flex flex-col">
         <nav class="flex items-center justify-between p-4 lg:p-8">
             <a href="{{ route('home') }}" class="text-2xl font-semibold text-zinc-900">
                 <span class="lg:block hidden">thanhtrungit.</span>
@@ -48,15 +48,17 @@
                 </div>
             </div>
         </nav>
-        <div class="container mx-auto flex">
+        <main class="flex-1 container mx-auto">
             @yield('content')
-        </div>
-        <div class="flex items-center justify-center pb-5">
-            <a href="https://my.tino.org/?affid=114&campaign=nvme-vps" target="_blank" class="flex flex-col items-center gap-2">
-                <span class="text-gray-500 text-sm">Hosting/VPS được tài trợ bởi TinoHost - Nhà cung cấp Server Hosting tốt nhất hiện nay</span>
-                <img src="{{ asset('assets/image/logo-tinohost.png') }}" alt="TinoHost" class="w-20">
-            </a>
-        </div>
+        </main>
+        <footer class="mt-auto">
+            <div class="container mx-auto pb-5 px-6">
+                <a href="https://my.tino.org/?affid=114&campaign=nvme-vps" target="_blank" class="flex flex-col items-center justify-center gap-2">
+                    <span class="text-gray-500 text-center">Hosting/VPS được tài trợ bởi TinoHost - Nhà cung cấp Server Hosting tốt nhất hiện nay</span>
+                    <img src="{{ asset('assets/image/logo-tinohost.png') }}" alt="TinoHost" class="w-20">
+                </a>
+            </div>
+        </footer>
     </div>
 </body>
 
