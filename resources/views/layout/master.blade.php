@@ -34,20 +34,28 @@
 </head>
 
 <body>
-    <div class="bg-zinc-50 antialiased bg-dot w-full min-h-screen">
-        <nav class="p-4 lg:p-8 flex items-center justify-between"><a class="font-semibold text-2xl text-zinc-900"
-                href="{{ route('home') }}"><span class="hidden lg:block">thanhtrungit.</span><span
-                    class="lg:hidden">thanhtrungit.</span></a>
+    <div class="min-h-screen w-full bg-zinc-50 bg-dot antialiased">
+        <nav class="flex items-center justify-between p-4 lg:p-8">
+            <a href="{{ route('home') }}" class="text-2xl font-semibold text-zinc-900">
+                <span class="lg:block hidden">thanhtrungit.</span>
+                <span class="lg:hidden block">thanhtrungit.</span>
+            </a>
             <div class="flex items-center lg:gap-4">
                 <div class="flex items-center gap-2">
-                    <a class=" font-medium hover:text-zinc-800 flex items-center text-zinc-500" href="/blogs">
-                        <span class="text-lg ml-4 relative false">Blog</span>
+                    <a href="/blogs" class="flex items-center text-zinc-500 font-medium hover:text-zinc-800">
+                        <span class="ml-4 text-lg relative">Blog</span>
                     </a>
                 </div>
             </div>
         </nav>
-        <div class="max-w-screen-lg mx-auto flex">
+        <div class="container mx-auto flex">
             @yield('content')
+        </div>
+        <div class="flex items-center justify-center pb-5">
+            <a href="https://my.tino.org/?affid=114&campaign=nvme-vps" target="_blank" class="flex flex-col items-center gap-2">
+                <span class="text-gray-500 text-sm">Hosting/VPS được tài trợ bởi TinoHost - Nhà cung cấp Server Hosting tốt nhất hiện nay</span>
+                <img src="{{ asset('assets/image/logo-tinohost.png') }}" alt="TinoHost" class="w-20">
+            </a>
         </div>
     </div>
 </body>
