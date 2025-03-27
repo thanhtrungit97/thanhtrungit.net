@@ -54,7 +54,7 @@
         <footer class="mt-auto">
             <div class="container mx-auto pb-5 px-6">
                 <a href="https://my.tino.org/?affid=114&campaign=nvme-vps" target="_blank" class="flex flex-col items-center justify-center gap-2">
-                    <span class="text-gray-500 text-center">Hosting/VPS được tài trợ bởi TinoHost - Nhà cung cấp Server Hosting tốt nhất hiện nay</span>
+                    <span class="text-gray-500 text-center text-sm">Hosting/VPS được tài trợ bởi TinoHost - Nhà cung cấp Server Hosting tốt nhất hiện nay</span>
                     <img src="{{ asset('assets/image/logo-tinohost.png') }}" alt="TinoHost" class="w-20">
                 </a>
             </div>
